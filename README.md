@@ -10,7 +10,7 @@ textToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
                 @Override
                 public void onInit(int i) {
                     if (i == TextToSpeech.SUCCESS) {
-                        textToSpeech.setLanguage(Locale.forLanguageTag("bn_BD"));
+                        textToSpeech.setLanguage(Locale.forLanguageTag("bn_BD"));//OR bn_IN
                         textToSpeech.speak( banglaTexts, TextToSpeech.QUEUE_FLUSH, null);
                     }
                 }
